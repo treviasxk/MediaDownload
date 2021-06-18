@@ -31,10 +31,10 @@ menu (){
         ;;
         3)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m ATUALIZANDO... \e[0m"
-            curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/install.sh -o install
-            chmod +x install
+            curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/install.sh -o $HOME/install
+            chmod +x $HOME/install
             sleep 1
-            bash install
+            bash $HOME/install
         ;;
         4)
             clear
