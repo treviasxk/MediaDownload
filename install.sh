@@ -8,7 +8,7 @@
     echo " VERSÃO:                                  1.0.0.1"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
-    pkg up
+    pkg up -y
     termux-setup-storage
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALANDO... \e[0m"
     pkg install python -y
