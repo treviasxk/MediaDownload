@@ -7,7 +7,7 @@ banner (){
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
     echo " __________________________________________________"
     echo " REDES SOCIAIS:                           treviasxk"
-    echo " VERSÃO:                                  1.0.0.6"
+    echo " VERSÃO:                                  1.0.0.7"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
 }
@@ -24,18 +24,18 @@ menu (){
     case $CHOICE in
         1)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         2)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
+            youtube-dlc --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
             read url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
+            youtube-dlc --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         4)
