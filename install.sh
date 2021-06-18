@@ -9,6 +9,7 @@
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALANDO... \e[0m"
+    rm $HOME/install
     termux-setup-storage
     pkg up -y
     pkg install python -y
@@ -20,5 +21,4 @@
     curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/termux-url-opener -o $HOME/bin/termux-url-opener
     chmod +x $HOME/bin/termux-url-opener
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALADO COM SUCESSO! \e[0m"
-    rm $HOME/install
     exit
