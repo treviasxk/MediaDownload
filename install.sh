@@ -14,7 +14,7 @@
     pkg install python -y
     pkg install curl -y
     pkg install ffmpeg -y
-    pip install youtube_dl -y
+    pip install youtube_dl && yes
     rm $HOME/bin/
     mkdir $HOME/bin/termux-url-opener
     curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/termux-url-opener -o $HOME/bin/termux-url-opener
