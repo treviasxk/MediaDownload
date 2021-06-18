@@ -1,38 +1,42 @@
-url=$1
-
-banner () {
+banner (){
     clear
-    echo -e "\e[39m"
     echo " ================= MEDIA DOWNLOAD ================="
     echo -e "\e[1m\e[32m ______  ___   ___ _    _ .   _    __     _  _ _ _"
     echo "   ||   |__/  |___  \  /  |  /_\  |__      \/  |/ "
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
     echo -e "\e[0m\e[39m __________________________________________________"
-    echo -e "\e[0m\e[39m __________________________________________________"
-    echo " REDES SOCIAIS                      treviasxk"
-    echo " VERSÃO                             1.0.0.0"
-    echo " LICENÇA                            GPL-3.0 License"
+    echo " REDES SOCIAIS:                           treviasxk"
+    echo " VERSÃO:                                  1.0.0.1"
+    echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
 }
 
 menu (){
     echo " 1 - Baixar Vídeo"
     echo " 2 - Baixar Audio"
-    echo " 3 - Sair"
+    echo " 3 - Baixar atualizações"
+    echo " 4 - Sair"
     read CHOICE
     banner
     case $CHOICE in
         1)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url
+            youtube-dl -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $1
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
-        4)
+        2)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
+            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $1
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
+            echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m ATUALIZANDO... \e[0m"
+            curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/install.sh -o install
+            chmod +x install
+            sleep 1
+            bash install
+        ;;
+        4)
             clear
             exit
         ;;
