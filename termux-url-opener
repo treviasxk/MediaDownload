@@ -16,8 +16,9 @@ menu (){
     echo "URL: $url"
     echo " 1 - Baixar Vídeo"
     echo " 2 - Baixar Audio"
-    echo " 3 - Baixar atualizações"
-    echo " 4 - Sair"
+    echo " 3 - Baixar Vídeo por URL"
+    echo " 4 - Baixar atualizações"
+    echo " 5 - Sair"
     read CHOICE
     banner
     case $CHOICE in
@@ -32,13 +33,19 @@ menu (){
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
+            read url
+            echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
+            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
+            echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
+        ;;
+        4)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m ATUALIZANDO... \e[0m"
             curl -s -L https://raw.githubusercontent.com/treviasxk/media-download/main/install.sh -o $HOME/install
             chmod +x $HOME/install
             sleep 1
             bash $HOME/install
         ;;
-        4)
+        5)
             clear
             exit
         ;;
