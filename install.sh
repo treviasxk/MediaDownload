@@ -1,3 +1,4 @@
+#!/bin/bash
     clear
     echo " ================= MEDIA DOWNLOAD ================="
     echo -e "\e[1m\e[32m ______  ___   ___ _    _ .   _    __     _  _ _ _"
