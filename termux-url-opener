@@ -7,12 +7,13 @@ banner (){
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
     echo " __________________________________________________"
     echo " REDES SOCIAIS:                           treviasxk"
-    echo " VERSÃO:                                  1.0.0.2"
+    echo " VERSÃO:                                  1.0.0.3"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
 }
 
 menu (){
+    echo "URL: $url"
     echo " 1 - Baixar Vídeo"
     echo " 2 - Baixar Audio"
     echo " 3 - Baixar atualizações"

@@ -5,12 +5,12 @@
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
     echo -e "\e[0m\e[39m __________________________________________________"
     echo " REDES SOCIAIS:                           treviasxk"
-    echo " VERSÃO:                                  1.0.0.2"
+    echo " VERSÃO:                                  1.0.0.3"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
-    pkg up -y
-    termux-setup-storage
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALANDO... \e[0m"
+    termux-setup-storage
+    pkg up -y
     pkg install python -y
     pkg install curl -y
     pkg install ffmpeg -y
@@ -21,5 +21,4 @@
     chmod +x $HOME/bin/termux-url-opener
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALADO COM SUCESSO! \e[0m"
     rm $HOME/install
-    bash $HOME/bin/termux-url-opener
     exit
