@@ -1,12 +1,13 @@
+url=$1
 banner (){
     clear
     echo " ================= MEDIA DOWNLOAD ================="
-    echo -e "\e[1m\e[32m ______  ___   ___ _    _ .   _    __     _  _ _ _"
+    echo " ______  ___   ___ _    _ .   _    __     _  _ _ _"
     echo "   ||   |__/  |___  \  /  |  /_\  |__      \/  |/ "
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
-    echo -e "\e[0m\e[39m __________________________________________________"
+    echo " __________________________________________________"
     echo " REDES SOCIAIS:                           treviasxk"
-    echo " VERSÃO:                                  1.0.0.1"
+    echo " VERSÃO:                                  1.0.0.2"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
 }
@@ -21,12 +22,12 @@ menu (){
     case $CHOICE in
         1)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $1
+            youtube-dl -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         2)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $1
+            youtube-dl --extract-audio --audio-format mp3 -o "/storage/emulated/0/Music/%(title)s.%(ext)s" $url
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
