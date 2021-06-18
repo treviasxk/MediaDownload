@@ -6,7 +6,7 @@
     echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
     echo -e "\e[0m\e[39m __________________________________________________"
     echo " REDES SOCIAIS:                           treviasxk"
-    echo " VERSÃO:                                  1.0.0.7"
+    echo " VERSÃO:                                  1.0.0.8"
     echo " LICENÇA:                                 GPL-3.0"
     echo " =================================================="
     echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALANDO... \e[0m"
