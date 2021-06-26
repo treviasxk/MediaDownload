@@ -8,7 +8,7 @@ banner (){
     echo "   ||   |  \ |___   \/   | /   \  __|  _/\_ |\_"
     echo -e "\e[0m\e[39m ______________________________________________"
     echo " REDES SOCIAIS:                       treviasxk"
-    echo " VERSÃO:                              1.0.1.0"
+    echo " VERSÃO:                              1.0.1.1"
     echo " LICENÇA:                             GPL-3.0"
     echo " =============================================="
 }
@@ -33,22 +33,22 @@ menu (){
         ;;
         2)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=1080p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=1080]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=720p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=720]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         4)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=480p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=480]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         5)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=360p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=360]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         6)

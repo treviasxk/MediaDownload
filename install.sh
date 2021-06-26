@@ -6,7 +6,7 @@ clear
     echo "   ||   |  \ |___   \/   | /   \  __|  _/\_ |\_"
     echo -e "\e[0m\e[39m ______________________________________________"
     echo " REDES SOCIAIS:                       treviasxk"
-    echo " VERSÃO:                              1.0.1.0"
+    echo " VERSÃO:                              1.0.1.1"
     echo " LICENÇA:                             GPL-3.0"
     echo " =============================================="
 rm $HOME/install
