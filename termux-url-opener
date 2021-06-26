@@ -33,7 +33,7 @@ menu (){
         ;;
         2)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url 'best[height<=1080p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=1080p]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         3)
