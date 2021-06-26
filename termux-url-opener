@@ -38,17 +38,17 @@ menu (){
         ;;
         3)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url 'best[height<=720p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=720p]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         4)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url 'best[height<=480p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=480p]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         5)
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INICIANDO PROCESSO... \e[0m"
-            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url 'best[height<=360p]'
+            youtube-dlc -o "/storage/emulated/0/Movies/%(title)s.%(ext)s" $url -f 'best[height<=360p]'
             echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m FINALIZADO! \e[0m"
         ;;
         6)
