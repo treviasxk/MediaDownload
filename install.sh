@@ -1,15 +1,14 @@
 #!/bin/bash
 clear
-echo " ================= MEDIA DOWNLOAD ================="
-echo -e "\e[1m\e[32m ______  ___   ___ _    _ .   _    __     _  _ _ _"
-echo "   ||   |__/  |___  \  /  |  /_\  |__      \/  |/ "
-echo "   ||   |  \  |___   \/   | /   \  __|    _/\_ |\_"
-echo -e "\e[0m\e[39m __________________________________________________"
-echo " REDES SOCIAIS:                           treviasxk"
-echo " VERSÃO:                                  1.0.0.8"
-echo " LICENÇA:                                 GPL-3.0"
-echo " =================================================="
-echo -e "\e[30;48;5;82m STATUS \e[40;38;5;82m INSTALANDO... \e[0m"
+    echo " ================ MEDIA DOWNLOAD ================"
+    echo -e "\e[1m\e[32m ______  ___   ___ _    _ .   _   __     _  _ _ _"
+    echo "   ||   |__/  |___  \  /  |  /_\  |__     \/  |/ "
+    echo "   ||   |  \  |___   \/   | /   \  __|   _/\_ |\_"
+    echo -e "\e[0m\e[39m ________________________________________________"
+    echo " REDES SOCIAIS:                         treviasxk"
+    echo " VERSÃO:                                1.0.0.9"
+    echo " LICENÇA:                               GPL-3.0"
+    echo " ================================================"
 rm $HOME/install
 termux-setup-storage
 pkg up -y
